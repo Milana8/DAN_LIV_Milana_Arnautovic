@@ -18,5 +18,28 @@ namespace Zadatak_1.Model
             Height = height;
             NumberOfSeats = numberOfSeats;
         }
+        public override void Start(object o)
+        {
+            Truck truck = (Truck)o;
+            Console.WriteLine(truck.Color + " truck started.");
+        }
+        public override void Stop(object o)
+        {
+            Truck truck = (Truck)o;
+            Console.WriteLine(truck.Color + " truck stopped.");
+
+        }
+        public void Loads(object o)
+        {
+            Truck truck = (Truck)o;
+            Console.WriteLine(truck.Color + " Load the truck!");
+        }
+
+        public void Unload(object o)
+        {
+            Truck truck = (Truck)o;
+            Console.WriteLine(truck.Color + " Unload the truck!");
+        }
     }
 }
+

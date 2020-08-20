@@ -18,5 +18,16 @@ namespace Zadatak_1.Model
             Wheelbase = wheelbase;
             Drive = drive;
         }
+        public override void Start(object o)
+        {
+            Tractor tractor = (Tractor)o;
+            Console.WriteLine(tractor.Color + " tractor started.");
+        }
+        public override void Stop(object o)
+        {
+            Tractor tractor = (Tractor)o;
+            Console.WriteLine(tractor.Color + " tractor stopped.");
+
+        }
     }
 }

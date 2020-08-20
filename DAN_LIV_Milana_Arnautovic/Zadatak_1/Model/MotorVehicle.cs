@@ -26,6 +26,7 @@ namespace Zadatak_1.Model
             Color = color;
             NumberOfEngines = numberOfEngines;
         }
-
+        public abstract void Start(object o);
+        public abstract void Stop(object o);
     }
 }

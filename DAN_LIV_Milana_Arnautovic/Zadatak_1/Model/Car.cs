@@ -25,5 +25,22 @@ namespace Zadatak_1.Model
             Maker = maker;
             TrafficNumber = trafficNumber;
         }
+        public override void Start(object o)
+        {
+            Car car = (Car)o;
+            Console.WriteLine(car.Color + " " + car.Maker + " started.");
+        }
+        public override void Stop(object o)
+        {
+            Car car = (Car)o;
+            Console.WriteLine(car.Color + " " + car.Maker + " stopped.");
+
+        }
+
+        public void ChangeColor(string color, int trafficNumber)
+        {
+            Color = color;
+            TrafficNumber = trafficNumber;
+        }
     }
 }
