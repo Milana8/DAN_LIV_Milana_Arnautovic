@@ -6,12 +6,27 @@ using System.Threading.Tasks;
 
 namespace Zadatak_1.Model
 {
+    /// <summary>
+    /// Class Truck
+    /// </summary>
     public class Truck : MotorVehicle
     {
         public double LoadCapacity { get; set; }
         public double Height { get; set; }
         public int NumberOfSeats { get; set; }
-
+        /// <summary>
+        /// Constructor with parameters
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="engineDisplacement"></param>
+        /// <param name="weight"></param>
+        /// <param name="category"></param>
+        /// <param name="engineType"></param>
+        /// <param name="color"></param>
+        /// <param name="numberOfEngines"></param>
+        /// <param name="loadCapacity"></param>
+        /// <param name="height"></param>
+        /// <param name="numberOfSeats"></param>
         public Truck(int id, double engineDisplacement, int weight, string category, string engineType, string color, int numberOfEngines, double loadCapacity, double height, int numberOfSeats) : base(id, engineDisplacement, weight, category, engineType, color, numberOfEngines)
         {
             LoadCapacity = loadCapacity;

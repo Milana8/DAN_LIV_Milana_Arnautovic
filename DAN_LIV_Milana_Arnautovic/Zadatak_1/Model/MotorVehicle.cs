@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Zadatak_1.Model
 {
+    /// <summary>
+    /// Abstract class motor vehicles
+    /// </summary>
     public abstract class MotorVehicle
     {
         public int Id { get; set; }
@@ -16,6 +19,16 @@ namespace Zadatak_1.Model
         public string Color { get; set; }
         public int NumberOfEngines { get; set; }
 
+        /// <summary>
+        /// Constructor with parameters
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="engineDisplacement"></param>
+        /// <param name="weight"></param>
+        /// <param name="category"></param>
+        /// <param name="engineType"></param>
+        /// <param name="color"></param>
+        /// <param name="numberOfEngines"></param>
         protected MotorVehicle(int id, double engineDisplacement, int weight, string category, string engineType, string color, int numberOfEngines)
         {
             Id = id;
@@ -26,7 +39,16 @@ namespace Zadatak_1.Model
             Color = color;
             NumberOfEngines = numberOfEngines;
         }
+        /// <summary>
+        /// Abstract method Start
+        /// </summary>
+        /// <param name="o"></param>
         public abstract void Start(object o);
+
+        /// <summary>
+        /// Abstract method Stop
+        /// </summary>
+        /// <param name="o"></param>
         public abstract void Stop(object o);
     }
 }
